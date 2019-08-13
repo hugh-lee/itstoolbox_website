@@ -1,0 +1,549 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Symbol";
+    /* default is 1rem or 16px */
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/**common style*/
+.hide {
+    display: none;
+}
+
+/**default scroll bar*/
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #fff;
+    /* background-image: -webkit-gradient(linear,
+            left bottom,
+            left top,
+            color-stop(0.44, rgb(122, 153, 217)),
+            color-stop(0.72, rgb(73, 125, 189)),
+            color-stop(0.86, rgb(28, 58, 148))); */
+    background-color: #cccccc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+}
+
+/**special scroll bar*/
+.scrollbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f5f5f5;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #fff;
+    /* background-image: -webkit-gradient(linear,
+            left bottom,
+            left top,
+            color-stop(0.44, rgb(122, 153, 217)),
+            color-stop(0.72, rgb(73, 125, 189)),
+            color-stop(0.86, rgb(28, 58, 148))); */
+    background-color: #cccccc;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+}
+
+/**nav tabs*/
+
+.wrapper {
+	position: absolute;
+	float: left;
+	height: 100%;
+	left: 0;
+	right: 300px;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	-o-box-sizing: content-box;
+	-ms-box-sizing: content-box;
+	box-sizing: border-box;
+	/* border-top: 4px solid #2095f2; */
+	border-right: 1px solid #d4d4d4;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+
+	background: linear-gradient(135deg,#FF6E41 0,#F86955 100%);
+	background-clip: padding-box, border-box;
+	background-origin: padding-box, border-box;
+	background-image: linear-gradient(135deg, #000, #000), linear-gradient(90deg, #e3eff8, #2095f2,  #e3eff8);
+	border-top: 4px transparent solid;
+}
+
+.header {
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 75px;
+	background: #fff;
+	/* border-top: 4px solid #2095f2; */
+	border-bottom: 1px solid #d4d4d4;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+	z-index: 99;
+	_position: absolute;
+
+	/*
+    height: 80px;
+    margin: 0;
+    display: flex;
+    padding: 0;
+    z-index: 20;
+    box-shadow: 0 3px 8px 0 rgba(116, 129, 141, 0.1);
+    border-bottom: 1px solid #d4dadf;
+    background-color: #FFFFFF;*/
+}
+
+.mod-share {
+	float: right;
+	width: 138px;
+	margin-top: 22px;
+	margin-right: 70px;
+	_display: inline;
+}
+
+.mod-head ul {
+	float: right;
+	line-height: 75px;
+	overflow: hidden;
+}
+
+.mod-head .logo {
+	float: left;
+	padding: 12px 0;
+	_background: url(../../image/public/logo.gif) 0 center no-repeat;
+}
+
+.midbody {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 75px;
+	bottom: 30px;
+	background: #fdfdfd;
+}
+
+.side {
+	position: relative;
+	float: left;
+	width: 249px;
+	height: 100%;
+	border-right: 1px solid #ccc;
+	background: #fff;
+	background-color: #f8f9fa;
+	overflow: auto;
+	_display: inline;
+	_top: 0;
+	_left: 0;
+}
+
+.content {
+	position: relative;
+	left: 0;
+	right: 0;
+	height: 100%;
+	margin-left: 250px;
+	padding: 30px 30px 220px;
+	overflow-y: auto;
+}
+
+.advertise {
+	position: absolute;
+	float: right;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	/* height: 100%; */
+	width: 300px;
+	padding: 30px 30px 220px;
+	overflow-y: auto;
+	z-index: 99;
+	background: #fff;
+}
+
+.footer {
+	position: absolute;
+	width: 100%;
+	height: 30px;
+	left: 0;
+	bottom: 0;
+	background: #2fa4e7;
+	background: #adb5bd;
+	background: #fff;
+	/* border-top: 4px solid #2095f2; */
+	border-bottom: 1px solid #d4d4d4;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+
+	font-family: fa5-proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+	background-clip: padding-box, border-box;
+	background-origin: padding-box, border-box;
+	background-image: linear-gradient(135deg, #fff, #fff), linear-gradient(90deg, #e3eff8, #2095f2,  #e3eff8);
+	border-bottom: 4px transparent solid;
+}
+
+.tool-search {
+	padding: 6px;
+	background: transparent;
+	top: 0px;
+	left: 0;
+	right: 0;
+	-webkit-transition: top 0.5s ease;
+	-moz-transition: top 0.5s ease;
+	-o-transition: top 0.5s ease;
+	transition: top 0.5s ease;
+}
+
+ul.tool-menu {
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow-y: auto;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	-webkit-transition: top 0.5s ease;
+	-moz-transition: top 0.5s ease;
+	-o-transition: top 0.5s ease;
+	transition: top 0.5s ease;
+}
+
+ul.tool-menu li {
+	list-style: none;
+}
+
+ul.tool-menu li.divider {
+	height: 1px;
+	margin: 7px 0;
+	overflow: hidden;
+	background: rgba(0, 0, 0, 0.07);
+}
+
+ul.tool-menu li a {
+	display: block;
+	padding: 10px 15px;
+	border-bottom: 0;
+	color: #364149;
+	background: transparent;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	position: relative;
+}
+
+ul.tool-menu li.active>a,
+ul.tool-menu li a:hover {
+	color: #008cff;
+	background: transparent;
+	text-decoration: none;
+}
+
+ul.tool-menu li ul {
+	padding-left: 16px;
+}
+
+ul.tool-menu li i.fa-check {
+	position: absolute;
+	right: 9px;
+	top: 16px;
+	font-size: 9px;
+	color: #3c3;
+}
+
+ul.tool-menu li i.hide-fa-check {
+	display: none;
+	position: absolute;
+	right: 9px;
+	top: 16px;
+	font-size: 9px;
+	color: #3c3;
+}
+
+ul.tool-menu li a.recently::before {
+	padding-right: 5px;
+	content: "\f004";
+	font-family: "Font Awesome 5 Free";
+	font-size: 12px;
+	vertical-align: 0px;
+}
+
+ul.tool-menu li a.folder-open::before {
+	padding-right: 1px;
+	content: "\f146";
+	font-family: "Font Awesome 5 Free";
+	font-size: 12px;
+	vertical-align: 0px;
+}
+
+ul.tool-menu li a.folder-close::before {
+	padding-right: 1px;
+	content: "\f0fe";
+	font-family: "Font Awesome 5 Free";
+	font-size: 12px;
+	vertical-align: 0px;
+}
+
+.tool-menu-hide {
+	display: none;
+}
+
+.only-pc {
+	display: block;
+}
+
+.only-mobile {
+	display: none;
+}
+
+.right-side-tools {
+	position: fixed;
+	z-index: 1070;
+	bottom: 40px;
+	right: 302px;
+	display: block;
+	box-shadow: 1px 1px 17px #ccc;
+	background: #efefef none repeat scroll 0 0;
+}
+
+.right-side-tools-button {
+	font-size: 28px;
+	width: 44px;
+	height: 44px;
+	display: block;
+	color: gray;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+.right-side-tools-button:hover {
+	color: Tomato;
+}
+
+@media screen and (max-width: 1023px) {
+	.only-pc {
+		display: none;
+	}
+
+	.only-mobile {
+		display: block;
+	}
+
+	/* .wrapper{
+		padding-top: 56px;
+	} */
+	.header {
+		height: 56px;
+		border-top: none;
+	}
+
+	.midbody {
+		top: 56px;
+		background: #fdfdfd;
+	}
+
+	.content {
+		position: inherit;
+		margin-left: 0;
+		padding: 14px 16px 70px;
+	}
+
+	.midbody .side {
+		left: -249px;
+		z-index: 98;
+	}
+
+	.status-show .side {
+		left: 0;
+	}
+
+	.status-show .mod-mask {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 97;
+		display: block;
+		content: '';
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, .5);
+		-webkit-transform: translateZ(0);
+	}
+
+	.mod-head {
+		height: 56px;
+	}
+
+	.mod-head .logo {
+		float: none;
+		display: block;
+		padding: 8px 0;
+		text-align: center;
+	}
+
+	.mod-head .logo img {
+		width: auto;
+		height: 40px;
+	}
+
+	.mod-head .menu {
+		position: absolute;
+		left: 0;
+		top: 0;
+		display: block;
+		width: 56px;
+		height: 56px;
+		padding: 16px 16px;
+	}
+
+	.mod-head .menu span {
+		display: block;
+		height: 3px;
+		background: #2095f2;
+		-webkit-transition: all;
+		-moz-transition: all;
+		-o-transition: all;
+		transition: all;
+		-webkit-transition-duration: 300ms;
+		transition-duration: 300ms;
+	}
+
+	.mod-head .menu span:nth-child(2) {
+		margin: 4px 0;
+	}
+
+	.status-show .mod-head .menu span:first-child {
+		transform: translateX(-4px) translateY(12px) rotate(45deg);
+		-webkit-transform: translateX(-4px) translateY(12px) rotate(45deg);
+	}
+
+	.status-show .mod-head .menu span:last-child {
+		transform: translateX(-4px) translateY(-12px) rotate(-45deg);
+		-webkit-transform: translateX(-4px) translateY(-12px) rotate(-45deg);
+	}
+
+	.mod-foot {
+		margin-left: 0;
+		padding: 12px 16px;
+	}
+
+	.mod-foot span {
+		display: block;
+		margin-left: 0;
+		padding: 0;
+		border-left: none;
+	}
+
+	.mod-foot .info {
+		margin-left: 0;
+		text-align: center;
+	}
+
+	.mod-foot .info p {
+		height: auto;
+		line-height: 22px;
+		font-size: 12px;
+	}
+
+	.mod-link {
+		height: 100%;
+		padding: 56px 0 0;
+		box-sizing: border-box;
+	}
+
+	.mod-link .bd {
+		height: 100%;
+		overflow: auto;
+	}
+
+	.mod-link ul {
+		padding: 15px 0 0;
+	}
+
+	.container .side-toggle .mod-link {
+		left: 0;
+	}
+
+	.mod-share {
+		float: none;
+		width: auto;
+		height: 24px;
+		line-height: 24px;
+		margin-bottom: 10px;
+		display: none;
+	}
+
+	.mod-share .bds_more {
+		display: none;
+	}
+
+	.mod-share .bdshare-button-style1-16 a {
+		background-image: url('../../image/public/icons_32.png');
+		background-size: 16px auto;
+	}
+
+	.mod-share .bdshare-button-style1-16 .bds_qzone {
+		background-position: 0 -26px;
+	}
+
+	.mod-share .bdshare-button-style1-16 .bds_tsina {
+		background-position: 0 -52px;
+	}
+
+	.mod-share .bdshare-button-style1-16 .bds_tqq {
+		background-position: 0 -130px;
+	}
+
+	.mod-share .bdshare-button-style1-16 .bds_renren {
+		background-position: 0 -104px;
+	}
+
+	.mod-share .bdshare-button-style1-16 .bds_douban {
+		background-position: 0 -234px;
+	}
+
+	.mod-friendlink .hd {
+		line-height: 24px;
+		margin-bottom: 9px;
+	}
+
+	.mod-friendlink li {
+		width: 25%;
+		min-width: initial;
+		font-size: 12px;
+	}
+
+	.mod-goback a {
+		right: 16px;
+		bottom: 20px;
+		width: 40px;
+		height: 40px;
+		background: url('../../image/public/m-goback.png') 0 0 no-repeat;
+		background-size: 40px 40px;
+	}
+}
